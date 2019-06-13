@@ -30,13 +30,13 @@ require 'config/config.php';
 <header>
     <div class="log_nav">
         <ul>
-            <li>Logowanie</li>
-            <li>Rejestracja</li>
+            <li> Logowanie</li>
+            <li> <a href="register.php">Rejestracja</a></li>
             <li>Kontakt</li>
         </ul>
     </div>
     <div id="logo_img">
-        <img src="/assets/images/logo-amazon.jpg" alt="">
+        <img src="./assets/images/logo-amazon.jpg" alt="">
     </div>
     <nav>
       <ul>
@@ -49,4 +49,8 @@ require 'config/config.php';
       </ul>
     </nav>
   </header>
+    
+
+
+
    

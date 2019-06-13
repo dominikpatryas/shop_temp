@@ -11,15 +11,23 @@
     src: url('../font/Bellota-LightItalic.otf');
 }
 
+
+
 body {
     line-height: 25px;
-    background-color: #d7d7d7;
+    /* background-color: #f1f3f3; */
 }
 
 a {
     color: #20aAe5;
     text-decoration: none;
 }
+
+.container{
+    width:80%;
+    margin:auto;
+    /* overflow:hidden; */
+  }
 
 
                     /* HEADER */
@@ -30,7 +38,7 @@ header {
     width: 100%;
     min-height:70px;
     border-bottom:#e8491d 3px solid;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     padding-top: 10px;
 }
@@ -41,6 +49,30 @@ header li {
 
 header nav {
     font-size: 25px;
+}
+
+header nav ul {
+    text-align: center;
+}
+
+.log_nav {
+    text-align: right;
+    margin: 0 100px 0 0;
+    font-size: 20px;
+}
+
+.log_nav li {
+    margin: 0 15px;
+}
+
+#logo_img {
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+#logo_img img {
+    width:350px;
+    height: 100px;
 }
 
                     /* HEADER */
