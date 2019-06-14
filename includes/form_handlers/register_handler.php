@@ -10,7 +10,6 @@ $password = "";
 $password2 = "";
 $date ="";
 $error_array = array();
-
 if (isset($_POST['register_button'])) {
 
     $firstname = strip_tags($_POST['register_firstname']);
@@ -48,16 +47,15 @@ if (isset($_POST['register_button'])) {
 
             $em_query = mysqli_query($con,"SELECT * FROM users WHERE email='$email'");
             if (mysqli_num_rows($em_query) > 0) {
-                echo array_push($error_array, "Email już jest w użyciu");
+                array_push($error_array, "Email już jest w użyciu");
             }
         }
         else {
-            echo array_push($error_array, "Niepoprawny format email");
+            array_push($error_array, "Niepoprawny format email");
         }
 }
 else {
-    echo array_push($error_array, "Emaile różnią się od siebie");
-}
+    array_push($error_array, "Emaile różnią się od siebie");
 }
 
 if(strlen($firstname) > 30 || strlen($firstname) < 4) {
@@ -101,6 +99,7 @@ if (empty($error_array)) {
     $_SESSION['register_email2'] = "";
 
     array_push($error_array, "<h4 style='color: #14C800'>Rejestracja pomyślna</h4>");
+}
 }
 
 ?>

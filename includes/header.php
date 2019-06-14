@@ -36,7 +36,7 @@ require 'config/config.php';
         </ul>
     </div>
     <div id="logo_img">
-        <img src="./assets/images/logo-amazon.jpg" alt="">
+   <a href="index.php"><img src="./assets/images/logo-amazon.jpg" alt=""> </a>
     </div>
     <nav>
       <ul>

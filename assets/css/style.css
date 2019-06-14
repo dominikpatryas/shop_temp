@@ -11,11 +11,10 @@
     src: url('../font/Bellota-LightItalic.otf');
 }
 
-
+/******* START GLOBAL *******/
 
 body {
     line-height: 25px;
-    /* background-color: #f1f3f3; */
 }
 
 a {
@@ -29,8 +28,34 @@ a {
     /* overflow:hidden; */
   }
 
+  input[type="text"] {
+    border-radius: 5px;
+    padding: 12px;
+    font-size:20px;
+  }
 
-                    /* HEADER */
+  input[type="password"] {
+    border-radius: 5px;
+    padding: 12px;
+    font-size:20px;
+  }
+
+  input[type="text"]:focus {
+    border: 3px solid #555;
+  }
+
+  input[type="password"]:focus {
+    border: 3px solid #555;
+  }
+
+  h2 {
+      font-family: 'Bellota-Bold', Courier, monospace;
+      font-weight: 900;
+  }
+
+  /******* FINISH GLOBAL *******/
+
+                    /* START HEADER */
 
 header {
     background:#3d3d3d;
@@ -75,4 +100,37 @@ header nav ul {
     height: 100px;
 }
 
-                    /* HEADER */
+                    /* FINISH HEADER */
+
+.form_login {
+    display: none;
+}
+
+.form_register {
+    width: 50%;
+text-align: center;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.form_register h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.form_register input[type="text"], .form_login input[type="text"] {
+    display: flex;
+    margin: 10px auto;
+    width: 400px;
+}
+
+.form_register input[type="password"], .form_login input[type="password"] {
+    display: flex;
+    margin: 10px auto;
+    width: 400px;
+  }
+
+.form_register input[type="submit"], .form_login input[type="submit"] {
+    margin: 10px 0 10px 10px;
+    padding: 5px 20px;
+}
