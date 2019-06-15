@@ -4,7 +4,7 @@ include ("includes/header.php");
 
 require 'config/config.php';
 require 'includes/form_handlers/register_handler.php';
-// require 'includes/form_handlers/login_handler';
+require 'includes/form_handlers/login_handler.php';
 
 ?>
 
@@ -37,17 +37,24 @@ require 'includes/form_handlers/register_handler.php';
 
             <input type="password" name="register_password2" placeholder="Potwierdź hasło" required>
 
-            <a href="#" id="signin" class="signin">Already have an account? Sign in here!</a>
-            <input type="submit" name="register_button">
+            <a href="#" id="signin" class="signin">Masz już konto? Zaloguj się</a>
+            <button class="butn login_register_button" name="register_button">Zarejestruj się</button>
             <?php if(in_array("<h4 style='color: #14C800'>Rejestracja pomyślna</h4>",$error_array)) echo "<h4 style='color: #14C800'>Rejestracja pomyślna</h4>"; ?>
         </form>
         
     </div>
     <div class="form_login">
-        <form action="register.php">
-            <input type="text" name="login_email">
+    <h2>Logowanie</h2>
 
-            <input type="password" name="login_password">
+        <form action="register.php" method="POST">
+            <input type="text" name="login_email" placeholder="Email" required>
+
+            <input type="password" name="login_password" placeholder="Hasło" required>
+            <a href="#" id="signup" class="signup">Nie masz konta? Zarejestruj się</a>
+           
+           <button class="butn login_register_button" name="login_button">Zaloguj się</button>
+           <?php if (in_array("Zalogowano",$error_array)) echo "<br><h4 style='color: #14C800'>Zalogowano</h4>";  ?>
+            <?php if (in_array("Niepoprawny email lub hasło",$error_array)) echo "<br>Niepoprawny email lub hasło";  ?>
         </form>    
     </div>
 </div>
