@@ -1,8 +1,21 @@
 <?php
 
 require 'config/config.php';
+include("includes/classes/User.php");
 
 
+if(isset($_SESSION['username'])) {
+$userLoggedIn = $_SESSION['username'];
+$user_query = mysqli_query($con, "SELECT * FROM users WHERE username='$userLoggedIn'");
+$user = mysqli_fetch_array($user_query);
+}
+
+if (basename($_SERVER['PHP_SELF']) != "register.php") { /* Returns The Current PHP File Name */
+  if(!isset($_SESSION['username'])) {
+    header("Location: register.php");
+  }
+  
+}
 
 
 ?>
@@ -31,12 +44,23 @@ require 'config/config.php';
 <body>
 
 <header>
-    <div class="log_nav">
+  <?php 
+  if (isset($_SESSION['username'])) {
+   echo " <div class='log_nav'>
         <ul>
-            <li> <a href="register.php">Zaloguj się lub zarejestruj</a></li>
+            <li> <a href='includes/handlers/logout.php'>Wyloguj się</a></li>
             <li>Kontakt</li>
         </ul>
-    </div>
+    </div>";
+  } else {
+    echo " <div class='log_nav'>
+        <ul>
+            <li> <a href='register.php'>Zarejestruj lub zaloguj się</a></li>
+            <li>Kontakt</li>
+        </ul>
+    </div>";
+  }
+  ?>
     <div id="logo_img">
    <a href="index.php"><img src="./assets/images/logo-amazon.jpg" alt=""> </a>
     </div>

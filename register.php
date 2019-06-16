@@ -7,8 +7,6 @@ require 'includes/form_handlers/register_handler.php';
 require 'includes/form_handlers/login_handler.php';
 
 ?>
-
-
  
 <div class="container">
     <div class="form_register">
@@ -58,7 +56,6 @@ require 'includes/form_handlers/login_handler.php';
         </form>    
     </div>
 </div>
-
 
 
 
