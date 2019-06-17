@@ -178,3 +178,34 @@ header nav ul {
 }
 
                     /* FINISH LOGIN FORM */
+
+                    /* SIDEBAR */
+
+                    .page {
+                        display: flex;
+                    }
+#sidebar {
+   width: 20%;
+   min-width: 300px;
+    background-color: whitesmoke;
+}
+#sidebar h2 {
+    text-align: center;
+}
+
+#sidebar hr {
+    width: 100%;
+}
+.categories ul li {
+    font-size: 25px;
+    padding: 20px 0 20px 20px;
+}
+                
+                    /* FINISH OF SIDEBAR */
+
+                    /* MAIN CONTENT */
+.main-content {
+}
+
+
+                    /* FINISH OF MAIN CONTENT */
