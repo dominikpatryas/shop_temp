@@ -20,10 +20,10 @@ if (basename($_SERVER['PHP_SELF']) != "register.php") { /* Returns The Current P
 
 ?>
 
-
-<html>
+<html lang="pl-PL">
 <head>
-<!-- JS -->
+<!-- JS --><meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="pl">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/js/bootstrap.js"> </script>
 <script src="assets/js/bootbox.min.js"> </script>
@@ -32,7 +32,7 @@ if (basename($_SERVER['PHP_SELF']) != "register.php") { /* Returns The Current P
 <script src="assets/js/jquery.Jcrop.js"> </script>
 
 <!-- CSS -->
-
+<link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -44,6 +44,10 @@ if (basename($_SERVER['PHP_SELF']) != "register.php") { /* Returns The Current P
 <body>
 
 <header>
+  <div class="log_logo">
+<div id="logo_img">
+   <a href="index.php"><img src="./assets/images/logo-amazon.jpg" alt=""> </a>
+    </div>
   <?php 
   if (isset($_SESSION['username'])) {
    echo " <div class='log_nav'>
@@ -61,13 +65,11 @@ if (basename($_SERVER['PHP_SELF']) != "register.php") { /* Returns The Current P
     </div>";
   }
   ?>
-    <div id="logo_img">
-   <a href="index.php"><img src="./assets/images/logo-amazon.jpg" alt=""> </a>
-    </div>
+  </div>
+    
     <nav>
       <ul>
-        <li><a href="#">Telefony</a></li>
-        <li><a href="#">Telewizory</a></li>
+        <li><a href="item.php">Odzież</a></li>
         <li><a href="#">AGD</a></li>
         <li><a href="#">Dom</a></li>
         <li><a href="#">Ogród</a></li>

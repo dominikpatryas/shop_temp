@@ -11,17 +11,21 @@
     src: url('../font/Bellota-LightItalic.otf');
 }
 
+
+
 /******* START GLOBAL *******/
 
 body {
     line-height: 25px;
+    background-color: #fafafa;
+    font-family: 'Spectral', serif;
 }
 
 .container{
     width:80%;
     margin:auto;
     /* overflow:hidden; */
-  }
+}
   
 a {
     color: rgb(76, 105, 118);
@@ -31,6 +35,11 @@ a {
 a:hover {
     text-decoration: none;
 
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 17px;
 }
 
 ul {
@@ -62,6 +71,7 @@ ul {
       font-family: 'Bellota-Bold', Courier, monospace;
       font-weight: 900;
   }
+
 
   .butn {
     background: #3498db;
@@ -105,6 +115,11 @@ header {
     padding-top: 10px;
 }
 
+.log_logo {
+    display: flex;
+    justify-content: space-between;
+}
+
 header li {
     display:inline;
 }
@@ -128,8 +143,8 @@ header nav ul {
 }
 
 #logo_img {
-    text-align: center;
-    margin: 0 0 25px 0;
+    text-align: left;
+    margin: 0 0 5px 0;
 }
 
 #logo_img img {
@@ -195,11 +210,11 @@ header nav ul {
                         display: flex;
                     }
 #sidebar {
-   width: 20%;
-   min-width: 300px;
+   width: 15%;
+   min-width: 150px;
     background-color: whitesmoke;
 }
-#sidebar h2 {
+#sidebar h4 {
     text-align: center;
 }
 
@@ -207,12 +222,20 @@ header nav ul {
     width: 100%;
 }
 .categories ul li {
-    font-size: 25px;
-    padding: 20px 0 20px 20px;
+    font-size: 20px;
+    padding: 5px 0 5px 20px;
+}
+
+.categories ul hr {
+    margin: 2px 0;
 }
 
 .categories ul {
     padding-left: 0px;
+}
+
+.categories {
+    padding: 25px 0 0 0;
 }
                 
                     /* FINISH OF SIDEBAR */
@@ -222,7 +245,7 @@ header nav ul {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    background-color: #555;
+    /* background-color: #555; */
     display:inline-block;
     padding-left: 80px;
 }
@@ -232,20 +255,45 @@ header nav ul {
     width: 300px;
     height: 400px;
     display: inline-block;
-    background-color: #3cb0fd;
     margin: 30px;
+    border: 1px #231e1c solid;
+    background-color: whitesmoke;
+
 }
 .item .img-box {
     text-align:center;
 }
 .item .img-box img {
     width:100%;
-    height: 60%;
+    height: 300px;
+    transition: transform .2s;
 }
 
-.description-box p {
-    /* display: inline; */
+.description-box {
+    
+    width: 100%;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    
 }
+
+.item h6 {
+    display: inline-block;
+    height: 50px;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+}
+.description-box span {
+    position: absolute;
+    right: 5;
+    bottom: 0;
+    font-size: 18px;
+}
+.img-box img:hover {
+    transform: scale(1.1);
+}
+
 
 
                     /* FINISH OF MAIN CONTENT */
