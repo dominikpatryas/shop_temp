@@ -31,7 +31,7 @@ include("includes/sidebar.php");
 }
 } 
 else {
-    echo "<h2 style='text-align:center;'>NOWOŚĆI:</h2>";
+    echo "<h2 style='text-align:center; color: white;'>NOWOŚĆI:</h2>";
     $query = mysqli_query($con, "SELECT * FROM items ORDER BY date_added LIMIT 6");
 
     while ($row = mysqli_fetch_array($query)) {

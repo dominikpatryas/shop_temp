@@ -52,6 +52,7 @@ if (basename($_SERVER['PHP_SELF']) != "register.php") { /* Returns The Current P
   if (isset($_SESSION['username'])) {
    echo " <div class='log_nav'>
         <ul>
+            <li> <a href='profile.php'>Profil</a></li>
             <li> <a href='includes/handlers/logout.php'>Wyloguj się</a></li>
             <li>Kontakt</li>
         </ul>

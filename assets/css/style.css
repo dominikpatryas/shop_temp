@@ -17,8 +17,10 @@
 
 body {
     line-height: 25px;
-    background-color: #fafafa;
+    background-color: #1a1a1d;
     font-family: 'Spectral', serif;
+    color: rgb(177, 177, 177);
+
 }
 
 .container{
@@ -28,7 +30,7 @@ body {
 }
   
 a {
-    color: rgb(76, 105, 118);
+    color: rgb(124, 147, 157);
     text-decoration: none;
 }
 
@@ -105,7 +107,7 @@ ul {
                     /* START HEADER */
 
 header {
-    background:#d1d1d1;
+    background:#4e4e50;
     color:#ffffff;
     width: 100%;
     min-height:70px;
@@ -148,8 +150,8 @@ header nav ul {
 }
 
 #logo_img img {
-    width:350px;
-    height: 100px;
+    width:250px;
+    height: 70px;
 }
 
                     /* FINISH HEADER */
@@ -159,14 +161,12 @@ header nav ul {
     display: none;
     width: 50%;
     text-align: center;
-    background-color: green;
     margin: 0 auto;
 }
 
 .form_register {
     width: 50%;
     text-align: center;
-    background-color: red;
     margin: 0 auto;
 }
 
@@ -212,7 +212,7 @@ header nav ul {
 #sidebar {
    width: 15%;
    min-width: 150px;
-    background-color: whitesmoke;
+    background-color: #4e4e50;
 }
 #sidebar h4 {
     text-align: center;
@@ -254,6 +254,7 @@ header nav ul {
 
 .item {
     /* min-width: 200px; */
+    border-radius: 5px;
     width: 300px;
     height: 400px;
     display: inline-block;
@@ -305,21 +306,61 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     min-height: 800px;
-    background-color: darkcyan;
+
 }
 
 .sub-description-box {
-    margin: 50px 200px 0 0;
+    margin: 50px 75px 0 0;
+    background-color: #7395ae;
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 500px;
+    height: 650px;
 }
 
-.sub-description-box span {
-    font-size: 70px;
+.sub-description-content {
+    width: 400px;
+    padding: 10px;
+}
+.sub-description-box h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.sub-description-content span {
+    font-size: 20px;
+    color: rgb(78, 78, 78);
     line-height: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sub-price {
+    text-align: right;
+    padding: 0 25px 0 0;
+}
+
+.sub-buttons {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.sub-buttons button{
+width: 90px;
+height:40px;
+font-size: 14px;
+}
+
+
+.sub-price {
+    font-size: 26px;
+    line-height: 100%;
+    margin: auto 0;
 }
 
 
 .sub-img-box {
-    background-color: green;
     margin: 50px 0 0 0;
     outline: 1px #231e1c solid;
     width: 500px;
@@ -331,6 +372,12 @@ header nav ul {
     width: inherit;
     height: inherit;
 
+}
+
+.sub-price-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
 }
 
 .buy_button {
