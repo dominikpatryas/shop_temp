@@ -248,6 +248,8 @@ header nav ul {
     /* background-color: #555; */
     display:inline-block;
     padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 auto;
 }
 
 .item {
@@ -297,3 +299,44 @@ header nav ul {
 
 
                     /* FINISH OF MAIN CONTENT */
+/* MAIN CONTENT OF SUBITEM */
+
+.sub-item {
+    display: flex;
+    justify-content: space-between;
+    min-height: 800px;
+    background-color: darkcyan;
+}
+
+.sub-description-box {
+    margin: 50px 200px 0 0;
+}
+
+.sub-description-box span {
+    font-size: 70px;
+    line-height: 120%;
+}
+
+
+.sub-img-box {
+    background-color: green;
+    margin: 50px 0 0 0;
+    outline: 1px #231e1c solid;
+    width: 500px;
+    height: 600px;
+
+}
+
+.sub-img-box img {
+    width: inherit;
+    height: inherit;
+
+}
+
+.buy_button {
+ height: 80px;   
+ width: 130px;
+}
+
+
+/* FINISH OF MAIN CONTENT OF SUBITEM */

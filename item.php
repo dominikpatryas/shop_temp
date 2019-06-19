@@ -20,7 +20,7 @@ include("includes/sidebar.php");
     echo "  
     <div class='item'>
         <div class='img-box'>
-        <a href='subitem.php/item?category=".$row['category']."&id=".$row['id']."'>    <img src=' ".$row['photo_url'] ." '></a>
+        <a href='subitem.php?category=".$row['category']."&id=".$row['id']."'>    <img src=' ".$row['photo_url'] ." '></a>
         </div> <h6>".$row['name']."</h6>
         <div class='description-box'>
        
@@ -31,7 +31,22 @@ include("includes/sidebar.php");
 }
 } 
 else {
-    echo "<h2>NOWOŚĆI:</h2>";
+    echo "<h2 style='text-align:center;'>NOWOŚĆI:</h2>";
+    $query = mysqli_query($con, "SELECT * FROM items ORDER BY date_added LIMIT 6");
+
+    while ($row = mysqli_fetch_array($query)) {
+        echo "  
+        <div class='item'>
+            <div class='img-box'>
+            <a href='subitem.php?category=".$row['category']."&id=".$row['id']."'>    <img src=' ".$row['photo_url'] ." '></a>
+            </div> <h6>".$row['name']."</h6>
+            <div class='description-box'>
+           
+                <span> ".$row['price'] . '.00 zł' ."
+                </span>
+            </div>
+        </div> ";
+    }
 }
 ?>
 
