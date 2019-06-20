@@ -346,7 +346,7 @@ header nav ul {
     justify-content: space-between;
 }
 
-.sub-buttons button{
+.sub-buttons input[type="submit"]{
 width: 90px;
 height:40px;
 font-size: 14px;
@@ -387,3 +387,11 @@ font-size: 14px;
 
 
 /* FINISH OF MAIN CONTENT OF SUBITEM */
+
+/* PROFILE */
+.profile-content {
+    background-color: rgb(255, 200, 127);
+    color: black;
+}
+
+/* FINISH OF PROFILE */
