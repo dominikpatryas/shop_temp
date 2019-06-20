@@ -19,8 +19,9 @@ class Item {
 
     public function addShoppingCartItem($userLoggedIn) {
         $id = $this->item['id'];
+        $name = $this->item['name'];
         $date_time_now = date("Y-m-d H:i:s");
-        $query = mysqli_query($this->con, "INSERT INTO shopping_cart VALUES ('','$userLoggedIn','$id','1','$date_time_now')");
+        $query = mysqli_query($this->con, "INSERT INTO shopping_cart VALUES ('','$userLoggedIn','$name','$id','1','$date_time_now')");
 
         if (!$query) {
             printf("Error: %s\n", mysqli_error($this->con));

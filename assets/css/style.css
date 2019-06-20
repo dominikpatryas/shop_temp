@@ -394,4 +394,9 @@ font-size: 14px;
     color: black;
 }
 
+.profile_item_photos img  {
+    width: 300px;
+    height: 150px;
+}
+
 /* FINISH OF PROFILE */
