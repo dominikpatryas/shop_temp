@@ -397,6 +397,25 @@ font-size: 14px;
 .profile_item_photos img  {
     width: 300px;
     height: 150px;
+    
+}
+
+.profile_item_photos h2, .profile_item_photos h3 {
+    display: inline;
+    background-color: red;
+}
+
+.profile_item {
+    background-color: blue;
+    width: 1000px;
+    height: 200px;
+    margin: 10px;
+}
+
+
+
+.fa-times {
+    font-size: 40px;
 }
 
 /* FINISH OF PROFILE */
