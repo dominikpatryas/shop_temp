@@ -28,7 +28,9 @@ body {
     margin:auto;
     /* overflow:hidden; */
 }
-  
+form{
+    margin:0px; padding:0px; display:inline;
+   }
 a {
     color: rgb(124, 147, 157);
     text-decoration: none;
@@ -390,32 +392,54 @@ font-size: 14px;
 
 /* PROFILE */
 .profile-content {
-    background-color: rgb(255, 200, 127);
+    border: 2px blue solid;
+    background-color: #4e4e50;
     color: black;
 }
 
 .profile_item_photos img  {
     width: 300px;
-    height: 150px;
+    height: 100%;
     
 }
 
 .profile_item_photos h2, .profile_item_photos h3 {
     display: inline;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .profile_item {
-    background-color: blue;
+    border: 2px #7395ae solid;
     width: 1000px;
     height: 200px;
     margin: 10px;
 }
 
+.profile_item_photos {
+    position: relative;
+}
 
+.profile_item_photos input[type="submit"] {
+    position: absolute;
+    right: 0;
+    width: 120px;
+    height: 40px;
+
+}
 
 .fa-times {
     font-size: 40px;
+}
+
+.sum-pay {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sum-pay input[type="submit"] {
+    width: 250px;
+
 }
 
 /* FINISH OF PROFILE */
