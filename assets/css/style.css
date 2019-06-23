@@ -443,3 +443,14 @@ font-size: 14px;
 }
 
 /* FINISH OF PROFILE */
+
+
+/* INDEX */
+.search {
+    text-align: center;
+}
+
+.results {
+    margin: 0 auto;
+}
+/* FINISH OF INDEX */
