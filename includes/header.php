@@ -57,6 +57,15 @@ if (basename($_SERVER['PHP_SELF']) != "register.php") { /* Returns The Current P
             <li>Kontakt</li>
         </ul>
     </div>";
+
+      if ($_SESSION['username'] == "dominik_patryas") {
+        echo  " <div class='log_nav'>
+        <ul>
+            <li> <a href='item_managment.php'>Dodaj przedmiot</a></li>
+        </ul>
+    </div>";
+      }
+
   } else {
     echo " <div class='log_nav'>
         <ul>

@@ -454,3 +454,20 @@ font-size: 14px;
     margin: 0 auto;
 }
 /* FINISH OF INDEX */
+
+
+/* ADD ITEM PAGE */
+.add_item_page {
+    margin: 0 auto;
+}
+.add_form {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+.add_form input[type='text'], .add_form select {
+    width: 100%;
+}
+
+/* FINISH OF ADD ITEM PAGE */
